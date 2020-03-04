@@ -1,0 +1,72 @@
+body {
+    color: red;
+    padding: 10px;
+    min-height: 100vh;
+    position: justify;
+    background-image: url("img/terrain.jpg");
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'SuperPolice';
+    src: url('SuperPolice.otf');
+}
+
+h1 {
+    font-family: SuperPolice;
+}
+
+#conteneur {
+    display: flex;
+}
+
+#lisere {
+    background-image: url("img/images.jpg");
+    float: left;
+    width: 82px;
+    height: 100vh;
+}
+
+p {
+    text-align: center;
+}
+
+
+
+figure {
+    text-align: center;
+}
+
+header a {
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+    box-shadow: 7px 7px 35px white;
+    height: 96px;
+}
+
+.formation {
+    max-width: 25%;
+}
+
+.expérience {
+    max-width: 40%;
+}
+
+@media all and (max-width: 600px)
+{
+    #lisere {
+        display: none;
+    }
+
+    #conteneur {
+        flex-direction: column;
+    }
+
+    header a {
+        display: none;
+    }
+}
