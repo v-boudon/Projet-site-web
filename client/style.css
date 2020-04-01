@@ -1,0 +1,161 @@
+body{
+    margin:0!important;
+    font-family: 'Barlow', sans-serif;
+}
+
+#accueil{
+    height:100vh;
+    background: url("img/terrain.jpg") no-repeat center center fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    text-align:center;
+    flex-basis:80%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+header h1{
+    height: 10px;
+}
+header #arrow{
+    border-radius: 70px;
+    border-style: solid;
+    border-color: black;
+    width:33px;
+    height:33px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:40px;
+}
+
+header #arrow img{
+    margin-top:8px;
+    width:20px;
+    height:20px;
+}
+
+header #arrow:hover{
+    border-color: #1a8f09;
+}
+
+p, h2 {
+    text-align: center;
+}
+
+#experience, #competences, #formation{
+    display: none;
+}
+.contenu_image{
+    text-align: center;
+}
+
+#conteneur_images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center;
+    align-items: center;
+}
+
+footer{
+    text-align: center;   
+    background-color: #1a8f09;
+    padding-bottom: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFF;
+    
+}
+
+footer a:hover{
+    color: #000;
+}
+
+#conteneur_liens{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding-bottom: 16px;
+    padding-top: 10px;
+}
+
+#conteneur_liens .liens{
+    width: 33px;
+    min-width: 33px;
+    height: 33px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#conteneur_liens .liens img{
+    width: 100%;
+    display: flex;
+}
+#gridWrap {
+    
+    position: relative;
+    padding: 20px 0;
+    background: rgba(255,255,255,1);
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+#conteneur_images .flip-card{
+    text-align: center;
+    border-style: hidden;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+#conteneur_images .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+#conteneur_images .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+#conteneur_images .flip-card-front, #conteneur_images .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+#conteneur_images .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    display: grid;
+}
+
+/* Style the back side */
+#conteneur_images .flip-card-back {
+    background-color: #1a8f09;
+    color: white;
+    transform: rotateY(180deg);
+}
+

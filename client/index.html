@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/ballon.png" />
+    <title>CV - Boudon Valentin </title>
+    
+</head>
+
+
+<body>
+    <div id="accueil">
+        <!-- <div id="lisere"></div> -->
+        <header>
+            <!-- <a href="img/photogrande.jpg">
+                <img src="img/photo.jpg" alt="Photo de profil" title="Cliquez pour agrandir" />
+            </a> -->
+            
+            <h1>Boudon Valentin</h1>
+            <p>Talonneur</p>
+            <figure>
+                <a href="img/profil.jpg">
+                    <img src="img/profil1.jpg" alt="Photo de profil" title="Cliquez pour agrandir" />
+                </a>
+                <figcaption>Il faut se donner les moyens de ses ambitions</figcaption>
+            </figure>
+            <div id="arrow" onclick="gotoconteneur()"><img src="img/down-arrow.svg"/></div>
+        </header>
+        
+    </div>
+    <div id="gridWrap">
+        <div id="conteneur_images" >
+            <div class="flip-card">   
+                <div id="goto_experience" class="contenu_image flip-card-inner" onclick="gotoexperience()">
+                    <div class="flip-card-front">
+                        <img src="img/images.jpg" alt="Photo de profil" title="Cliquez pour agrandir" />
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Mon expérience</h1>
+                        
+                    </div>
+                </div>
+            </div> 
+            <div class="flip-card">   
+                <div id="goto_competences" class="contenu_image flip-card-inner" onclick="gotocompetences()">
+                    <div class="flip-card-front">
+                        <img src="img/France.jpg" alt="Photo de profil" title="Cliquez pour agrandir" />
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Mes compétences</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">   
+                <div id="goto_formation" class="contenu_image flip-card-inner" onclick="gotoformation()">
+                    <div class="flip-card-front">
+                        <img src="img/photo2.jpg" alt="Photo de profil" title="Cliquez pour agrandir" />
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Mes caractéristiques</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="conteneur">
+    <div id="experience">
+        <h2>Mon expérience</h2>
+        <ul>
+            <li>
+                <strong>2012-2013</strong> : Talonneur de l’équipe GAUDERMEN, participation aux phases finales, élimination barrage
+                contre Montauban.
+            </li>
+            <li>
+                <strong>2013-2014</strong> : Talonneur de l’équipe ALAMERCERY.</br> Talonneur de l’équipe de PROVENCE Finaliste
+                TADDEI B contre Pays Catalan.</br> Talonneur et capitaine de l’équipe du lycée agricole de Rodilhan Finaliste
+                du championnat de France Elite des lycées agricoles.
+            </li>
+            <li>
+                <strong>2014-2015</strong> : Talonneur et capitaine de l’équipe BALANDRADE.</br> Talonneur de l’équipe de FRANCE
+                des lycées agricoles.</br>Talonneur et capitaine de l’équipe du lycée agricole de Rodilhan.
+            </li>
+            <li>
+                <strong>2015-2016</strong> : Talonneur de l’équipe BELASCAIN.</br> Troisième ligne de l’équipe Réserve de FEDERALE
+                2.
+            </li>
+            <li>
+                <strong>2016-2017</strong> : Talonneur et capitaine de l'équipe BELASCAIN.</br> Talonneur de l'équipe Réserve
+                de FEDERALE 2.
+            </li>
+            <li>
+                <strong>2017-2018</strong> : Talonneur de l'équipe ESPOIR de FEDERALE 1.
+            </li>
+            <li>
+                <strong>2018-2019</strong> : Talonneur de l'ACBB en FEDERALE 3.
+            </li><li>
+                <strong>2019-2020</strong> : Talonneur du RC Suresnes en FEDERALE 1 et ESPOIR de FEDERALE 1.</br>
+                <i>Entraînement quotidien avec le groupe de joueurs professionnels</i>
+            </li>
+        </ul>
+    </div>
+    <div id="competences">
+        <h2>Mes compétences</h2>
+        <ul>
+            <li>Lanceur en touche</li>
+            <li>Très travailleur</li>
+            <li>Fort esprit d'équipe</li>
+        </ul>
+    </div>
+    <div id="formation">
+        <h2>Mes caractéristiques</h2>
+        <p>            
+            Poids:</u> <strong>105 Kg</strong> </br>
+            Taille:</u> <strong>180 cm</strong> </br>
+            Formé au départ au poste de centre, je me suis réorienté par la suite au poste de Talonneur.
+        </p>
+    </div>
+</div>
+<!-- </div> -->
+</body>
+
+<footer>
+    <div id="conteneur_liens">
+        <div class="liens">
+            <a href="CV rugby.pdf" target="_blank">
+                <img src="img/businessman.svg"/>
+            </a>
+        </div>
+        <div class="liens">
+            <a href="https://www.linkedin.com/in/valentin-boudon-242563176" target="_blank">
+                <img src="img/linkedin.svg"/>
+            </a>
+        </div>
+        <div class="liens">
+            <a href="https://www.facebook.com/valentin.boudon.1" target="_blank">
+                <img src="img/facebook.svg"/>
+            </a>
+        </div>
+        <div class="liens">
+            <a href="https://www.instagram.com/laboude2/" target="_blank">
+                <img src="img/instagram.svg"/>
+            </a>
+        </div>
+    </div>
+    
+    Valentin Boudon © 2020 
+    <script src="js/app.js"></script>
+</footer>
+
+</html>
